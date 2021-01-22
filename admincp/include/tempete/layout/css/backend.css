@@ -1,0 +1,197 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*start the global*/
+h4 
+{
+    margin-top:3%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.ask 
+{
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-size: 20px;
+    color: #f00;
+}
+/*end the global*/
+/*start the nav*/
+nav
+{
+    background-color: #333;
+}
+.link
+{
+    margin-top: 5px;
+}
+.link i 
+{
+    color: #fff;
+}
+nav span 
+{
+    color: #Fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+nav a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.imgcir
+{
+    width: 55px;
+}
+.imgcir img 
+{
+    width: 100%;
+}
+/*end the nav*/
+/*start the singup***/
+.sing
+{
+    color:#0069d9 ;
+}
+.form-group
+{
+    width: 500px;
+    margin: auto;
+}
+.form-group div 
+{
+ position: relative;
+}
+.form-group div input 
+{
+    margin-bottom: 10px;
+}
+.form-group input[type="submit"]
+{
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+/*end the singup*/
+/* start the login page*/
+.log
+{
+    color: #218838;
+}
+form div i 
+{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #553c3c;
+}
+form div .login
+{
+   text-indent: 10px;
+}
+form div .login::placeholder
+{
+    text-transform: capitalize;
+}
+/*end the login page*/
+/*start the homepage*/
+.image
+{
+    background-image: url(../image/pexels-pixabay-267360.jpg);
+    background-size: cover;
+    position: relative;
+}
+.image .layout 
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 1;
+}
+.withouts form 
+{
+    position: relative;
+    z-index: 5;
+    
+}
+.withouts form textarea 
+{
+  margin-top: 15%;
+  margin-bottom: 2%;
+  width: 500px;
+  height: 200px;
+}
+/*end the homepage*/
+/*start the dashbord*/
+.tmember
+{
+    margin-top: 40%;
+    text-align: center;
+    padding: 5px;
+    background-color: #00b7c2;
+    border-radius: 10px;
+}
+.tmember i 
+{
+    display: inherit;
+    font-size: 80px;
+    color: #eee;
+}
+.tmember span a
+{
+   font-size: 30px;
+   color: #fff;
+   text-decoration: none;
+}
+/*end the dashbord*/
+/*start the member page*/
+.head_mem
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: #6c757d;
+}
+.main-table
+{
+   margin-top: 5%;
+}
+.main-table tr:first-of-type
+{
+    background-color: #333;
+    color: #fff;
+}
+.img
+{
+    width: 60px;
+    margin: auto;
+}
+.img img 
+{
+    width: 100%;
+    border-radius: 50%;
+    padding: 3px;
+    color: #333;
+}
+/*end the member page*/
+/*start the footer*/
+footer
+{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 5%;
+}
+footer a 
+{
+    color: #218838;
+    font-weight: bold;
+}
+/*end the footer*/

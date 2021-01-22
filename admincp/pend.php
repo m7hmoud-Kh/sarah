@@ -1,0 +1,44 @@
+<?php 
+session_start();
+$pagetitle = "Delete Member";
+include "init.php";
+if(isset($_SESSION["admin"]))
+{
+  if(isset($_GET["uid"]) && is_numeric($_GET["uid"]))
+  {
+     $uid = $_GET["uid"];
+
+     $stmt = $con->prepare("SELECT ID FROM users WHERE ID = ?");
+     $stmt->execute(array($uid));
+     $count = $stmt->rowCount();
+     if($count > 0)
+     {
+          $stmt2 =$con->prepare("UPDATE users SET approval = 1 WHERE ID = ?");
+          $stmt2->execute(array($uid));
+          $count2 = $stmt2->rowCount();
+          if($count2 > 0)
+          {
+            echo "<div class='container'>";
+            $themeg = "<div class='alert alert-success'>this Member Was Accepted</div>";
+            redirect($themeg,'back', 2 , 'back');
+            echo "</div>";
+          }
+     }
+     else
+     {
+         echo "<div class='container'>";
+         echo "<div class='alert alert-danger'>There Is No Such <b>ID</b></div>";
+         echo "</div>";
+     }
+  }
+  else
+  {
+    header("location:admin.php");
+  }
+}
+else
+{
+    header("location:admin.php");
+}
+
+include $footer ;
