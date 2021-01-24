@@ -1,6 +1,6 @@
 <?php 
 
-$host = "mysql:host=localhost;dbname=message";
+$host = "mysql:host=localhost;dbname=sharah";
 $user= "root";
 $password = "";
 
